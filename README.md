@@ -35,6 +35,7 @@ Run demo application on Spike
                  Task - 2
              
 Run demo application on Spike with debug mode, Follow riscv-isa-sim [README.md](https://github.com/riscv/riscv-isa-sim) to know more about debug instruction.
+
         $ spike -d riscv-spike.elf
 
 To capture debug log use below command
