@@ -31,8 +31,8 @@ Run demo application on Spike
         $ spike riscv-spike.elf
 
         output : PASS! 
-                Task - 1
-                Task - 2
+                 Task - 1
+                 Task - 2
              
 Run demo application on Spike with debug mode, Follow riscv-isa-sim [README.md](https://github.com/riscv/riscv-isa-sim) to know more about debug instruction.
         $ spike -d riscv-spike.elf
