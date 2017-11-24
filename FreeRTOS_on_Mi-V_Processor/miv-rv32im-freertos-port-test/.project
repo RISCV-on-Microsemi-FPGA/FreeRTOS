@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>RV32_FreeRTOS_Test</name>
+	<name>miv-rv32im-freertos-port-test</name>
 	<comment></comment>
 	<projects>
 	</projects>

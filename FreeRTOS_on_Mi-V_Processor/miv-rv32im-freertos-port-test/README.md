@@ -7,7 +7,7 @@ M2S150-Advanced-Dev-Kit
 ### How to run the FreeRTOS RISC-V port:
 To know how to use the SoftConsole workspace, please refer the [Readme.md](https://github.com/RISCV-on-Microsemi-FPGA/SoftConsole/blob/master/ExampleWorkspace/README.md)
 
-The RV32_FreeRTOS_Test is a self contained project. This project demonstrates 
+The miv-rv32im-freertos-port-test is a self contained project. This project demonstrates 
 the FreeRTOS running with Microsemi RISC-V processor. This project creates  two 
 tasks and runs them at regular intervals.
     
