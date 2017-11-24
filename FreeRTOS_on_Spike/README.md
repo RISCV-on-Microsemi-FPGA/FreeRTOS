@@ -1,6 +1,7 @@
 # FreeRTOS
 FreeRTOS for RISC-V(32 and 64-bit)
 
+FreeRTOS is tested on Spike with several builds including single-task, multi-task 
 and typical demo test which includes queues, semaphores, mutexes and about a dozen 
 concurrent tasks running concurrently.
 
