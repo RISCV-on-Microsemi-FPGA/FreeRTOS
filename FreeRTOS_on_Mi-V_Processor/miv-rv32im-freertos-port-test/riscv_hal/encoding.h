@@ -1,12 +1,12 @@
 /*******************************************************************************
- * (c) Copyright 2016-2017 Microsemi SoC Products Group.  All rights reserved.
+ * (c) Copyright 2016-2018 Microsemi SoC Products Group.  All rights reserved.
  *
  * @file encodings.h
  * @author Microsemi SoC Products Group
  * @brief Mi-V soft processor register bit mask and shift constants encodings.
  *
- * SVN $Revision: 9587 $
- * SVN $Date: 2017-11-16 12:53:31 +0530 (Thu, 16 Nov 2017) $
+ * SVN $Revision: 9825 $
+ * SVN $Date: 2018-03-19 10:31:41 +0530 (Mon, 19 Mar 2018) $
  */
 #ifndef RISCV_CSR_ENCODING_H
 #define RISCV_CSR_ENCODING_H
@@ -54,15 +54,15 @@ extern "C" {
 #define SSTATUS32_SD        0x80000000
 #define SSTATUS64_SD        0x8000000000000000
 
-#define MIP_SSIP            (1 << IRQ_S_SOFT)
-#define MIP_HSIP            (1 << IRQ_H_SOFT)
-#define MIP_MSIP            (1 << IRQ_M_SOFT)
-#define MIP_STIP            (1 << IRQ_S_TIMER)
-#define MIP_HTIP            (1 << IRQ_H_TIMER)
-#define MIP_MTIP            (1 << IRQ_M_TIMER)
-#define MIP_SEIP            (1 << IRQ_S_EXT)
-#define MIP_HEIP            (1 << IRQ_H_EXT)
-#define MIP_MEIP            (1 << IRQ_M_EXT)
+#define MIP_SSIP            (1u << IRQ_S_SOFT)
+#define MIP_HSIP            (1u << IRQ_H_SOFT)
+#define MIP_MSIP            (1u << IRQ_M_SOFT)
+#define MIP_STIP            (1u << IRQ_S_TIMER)
+#define MIP_HTIP            (1u << IRQ_H_TIMER)
+#define MIP_MTIP            (1u << IRQ_M_TIMER)
+#define MIP_SEIP            (1u << IRQ_S_EXT)
+#define MIP_HEIP            (1u << IRQ_H_EXT)
+#define MIP_MEIP            (1u << IRQ_M_EXT)
 
 #define SIP_SSIP            MIP_SSIP
 #define SIP_STIP            MIP_STIP
@@ -96,12 +96,12 @@ extern "C" {
 #define EXT_IO_BASE         0x40000000
 #define DRAM_BASE           0x80000000
 
-// page table entry (PTE) fields
-#define PTE_V               0x001       // Valid
-#define PTE_TYPE            0x01E       // Type
-#define PTE_R               0x020       // Referenced
-#define PTE_D               0x040       // Dirty
-#define PTE_SOFT            0x380       // Reserved for Software
+/* page table entry (PTE) fields */
+#define PTE_V               0x001       /* Valid */
+#define PTE_TYPE            0x01E       /* Type  */
+#define PTE_R               0x020       /* Referenced */
+#define PTE_D               0x040       /* Dirty */
+#define PTE_SOFT            0x380       /* Reserved for Software */
 
 #define PTE_TYPE_TABLE        0x00
 #define PTE_TYPE_TABLE_GLOBAL 0x02

@@ -1,12 +1,12 @@
 /*******************************************************************************
- * (c) Copyright 2016-2017 Microsemi SoC Products Group.  All rights reserved.
+ * (c) Copyright 2016-2018 Microsemi SoC Products Group.  All rights reserved.
  *
  * @file init.c
  * @author Microsemi SoC Products Group
  * @brief Mi-V soft processor memory section initializations and start-up code.
  *
- * SVN $Revision: 9575 $
- * SVN $Date: 2017-11-14 14:23:11 +0530 (Tue, 14 Nov 2017) $
+ * SVN $Revision: 9661 $
+ * SVN $Date: 2018-01-15 16:13:33 +0530 (Mon, 15 Jan 2018) $
  */
 
 #include <stdlib.h>

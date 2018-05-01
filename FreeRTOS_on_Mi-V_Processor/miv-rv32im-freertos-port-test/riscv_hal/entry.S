@@ -1,12 +1,12 @@
 /*******************************************************************************
- * (c) Copyright 2016-2017 Microsemi SoC Products Group.  All rights reserved.
+ * (c) Copyright 2016-2018 Microsemi SoC Products Group.  All rights reserved.
  *
  * @file entry.S
  * @author Microsemi SoC Products Group
  * @brief Mi-V soft processor vectors, trap handling and startup code.
  *
- * SVN $Revision: 9587 $
- * SVN $Date: 2017-11-16 12:53:31 +0530 (Thu, 16 Nov 2017) $
+ * SVN $Revision: 9947 $
+ * SVN $Date: 2018-04-30 20:28:49 +0530 (Mon, 30 Apr 2018) $
  */
 #ifndef ENTRY_S
 #define ENTRY_S
@@ -41,7 +41,7 @@ handle_reset:
   csrwi mstatus, 0
   csrwi mie, 0
 
-/*Flaoting point support configuration*/
+/*Floating point support configuration*/
 
 #ifdef __riscv_flen
   csrr t0, mstatus
@@ -55,9 +55,15 @@ handle_reset:
   lui t0, 0x0
   fscsr t0
 #endif
+.option push
 
+# Ensure the instruction is not optimized, since gp is not yet set
+
+.option norelax
   # initialize global pointer
   la gp, __global_pointer$
+
+.option pop
 
   # initialize stack pointer
   la sp, __stack_top

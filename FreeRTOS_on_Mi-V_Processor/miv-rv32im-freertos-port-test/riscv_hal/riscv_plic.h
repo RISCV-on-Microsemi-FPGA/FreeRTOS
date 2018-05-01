@@ -1,12 +1,12 @@
 /*******************************************************************************
- * (c) Copyright 2016-2017 Microsemi SoC Products Group.  All rights reserved.
+ * (c) Copyright 2016-2018 Microsemi SoC Products Group.  All rights reserved.
  *
  * @file riscv_plic.h
  * @author Microsemi SoC Products Group
  * @brief Mi-V soft processor PLIC and PRCI access data structures and functions.
  *
- * SVN $Revision: 9575 $
- * SVN $Date: 2017-11-14 14:23:11 +0530 (Tue, 14 Nov 2017) $
+ * SVN $Revision: 9838 $
+ * SVN $Date: 2018-03-19 19:22:54 +0530 (Mon, 19 Mar 2018) $
  */
 #ifndef RISCV_PLIC_H
 #define RISCV_PLIC_H

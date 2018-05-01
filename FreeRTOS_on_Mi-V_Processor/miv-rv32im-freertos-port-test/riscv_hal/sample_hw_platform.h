@@ -1,11 +1,11 @@
 /*******************************************************************************
- * (c) Copyright 2016-2017 Microsemi Corporation.  All rights reserved.
+ * (c) Copyright 2016-2018 Microsemi Corporation.  All rights reserved.
  *
  * Platform definitions
  * Version based on requirements of RISCV-HAL
  *
- * SVN $Revision: 9587 $
- * SVN $Date: 2017-11-16 12:53:31 +0530 (Thu, 16 Nov 2017) $
+ * SVN $Revision: 9946 $
+ * SVN $Date: 2018-04-30 20:26:55 +0530 (Mon, 30 Apr 2018) $
  */
  /*=========================================================================*//**
   @mainpage Sample file detailing how hw_platform.h should be constructed for 
@@ -36,6 +36,7 @@
 #ifndef SYS_CLK_FREQ
 #define SYS_CLK_FREQ                    83000000UL
 #endif
+
 
 /***************************************************************************//**
  * Non-memory Peripheral base addresses

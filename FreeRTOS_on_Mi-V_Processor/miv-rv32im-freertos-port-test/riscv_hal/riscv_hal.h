@@ -1,12 +1,12 @@
 /*******************************************************************************
- * (c) Copyright 2016-2017 Microsemi SoC Products Group. All rights reserved.
- * 
+ * (c) Copyright 2016-2018 Microsemi SoC Products Group. All rights reserved.
+ *
  * @file riscv_hal.h
  * @author Microsemi SoC Products Group
  * @brief Hardware Abstraction Layer functions for Mi-V soft processors
  *
- * SVN $Revision: 9575 $
- * SVN $Date: 2017-11-14 14:23:11 +0530 (Tue, 14 Nov 2017) $
+ * SVN $Revision: 9835 $
+ * SVN $Date: 2018-03-19 19:11:35 +0530 (Mon, 19 Mar 2018) $
  */
 
 #ifndef RISCV_HAL_H
@@ -22,8 +22,8 @@ extern "C" {
  *Return value from External IRQ handler. This will be used to disable the External
  *interrupt.
  */
-#define EXT_IRQ_KEEP_ENABLED                0
-#define EXT_IRQ_DISABLE                     1
+#define EXT_IRQ_KEEP_ENABLED                0U
+#define EXT_IRQ_DISABLE                     1U
 
 /*------------------------------------------------------------------------------
  * Interrupt enable/disable.
@@ -41,7 +41,7 @@ void SysTick_Handler(void);
  * Configures the machine timer to generate a system tick interrupt at regular
  * intervals.
  * Takes the number of system clock ticks between interrupts.
- * 
+ *
  * Returns 0 if successful.
  * Returns 1 if the interrupt interval cannot be achieved.
  */

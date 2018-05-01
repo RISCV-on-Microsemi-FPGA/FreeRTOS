@@ -365,7 +365,15 @@ void Software_IRQHandler(void)
 
 		__asm volatile("addi	sp, sp, 4 * 32");
 
-		PRCI->MSIP[0] = 0x00;
+		//PRCI->MSIP[0] = 0x00;
+
+		__asm volatile("addi sp, sp, -1*4");
+		__asm volatile("sw t0, 0(sp)");
+		__asm volatile("li t0, 0x44000000");	// address of PRCI->MSIP[0]
+		__asm volatile("sw zero,0(t0)");
+		__asm volatile("lw t0, 0(sp)");
+		__asm volatile("addi sp, sp, 1*4");
+
 		__asm volatile("mret");
 	}
 }

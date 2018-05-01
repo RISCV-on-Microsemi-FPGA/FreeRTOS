@@ -1,8 +1,8 @@
 /*******************************************************************************
- * (c) Copyright 2008-2017 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2008-2018 Microsemi SoC Products Group. All rights reserved.
  * 
- * SVN $Revision: 9587 $
- * SVN $Date: 2017-11-16 12:53:31 +0530 (Thu, 16 Nov 2017) $
+ * SVN $Revision: 9661 $
+ * SVN $Date: 2018-01-15 16:13:33 +0530 (Mon, 15 Jan 2018) $
  */
 #ifndef HAL_ASSERT_HEADER
 #define HAL_ASSERT_HEADER
