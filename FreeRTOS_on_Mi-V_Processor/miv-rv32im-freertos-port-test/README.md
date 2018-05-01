@@ -38,9 +38,7 @@ You must configure the FreeRTOS as per your applications need. Please read and m
 E.g. You must set configCPU_CLOCK_HZ parameter in FreeRTOSConfig.h according to the hardware platform 
 design that you are using. 
 
-The RISC-V creative board design is running at 66Mhz clock.
-The PolarFire Eval Kit design is running at 50Mhz clock.
-The SmartFusion2 Adv. Developement kit design is running at 50Mhz clock.
+The RISC-V creative board design uses 66Mhz processor clock. The PolarFire Eval Kit design uses 50Mhz processor clock. The SmartFusion2 Adv. Development kit design uses 83Mhz processor clock.
 
 ### Microsemi SoftConsole Toolchain
 To know more please refer: [SoftConsole](https://github.com/RISCV-on-Microsemi-FPGA/SoftConsole)
