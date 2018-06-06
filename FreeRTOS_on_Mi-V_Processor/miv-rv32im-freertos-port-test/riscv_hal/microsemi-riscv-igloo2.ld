@@ -1,5 +1,5 @@
 /*******************************************************************************
- * (c) Copyright 2016-2017 Microsemi SoC Products Group.  All rights reserved.
+ * (c) Copyright 2016-2018 Microsemi SoC Products Group.  All rights reserved.
  * 
  * file name : microsemi-riscv-igloo2.ld
  * Mi-V soft processor linker script for creating a SoftConsole downloadable
@@ -8,8 +8,8 @@
  * This linker script assumes that the eNVM is connected at on the Mi-V soft
  * processor memory space. 
  *
- * SVN $Revision: 9587 $
- * SVN $Date: 2017-11-16 12:53:31 +0530 (Thu, 16 Nov 2017) $
+ * SVN $Revision: 9661 $
+ * SVN $Date: 2018-01-15 16:13:33 +0530 (Mon, 15 Jan 2018) $
  */
  
 OUTPUT_ARCH( "riscv" )

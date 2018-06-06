@@ -1,5 +1,5 @@
 /*******************************************************************************
- * (c) Copyright 2016-2017 Microsemi SoC Products Group.  All rights reserved.
+ * (c) Copyright 2016-2018 Microsemi SoC Products Group.  All rights reserved.
  * 
  * file name : microsemi-riscv-ram.ld
  * Mi-V soft processor linker script for creating a SoftConsole downloadable
@@ -9,8 +9,8 @@
  * processor memory space. The start address and size of the memory space must
  * be correct as per the Libero design.
  *
- * SVN $Revision: 9579 $
- * SVN $Date: 2017-11-14 17:40:16 +0530 (Tue, 14 Nov 2017) $
+ * SVN $Revision: 9661 $
+ * SVN $Date: 2018-01-15 16:13:33 +0530 (Mon, 15 Jan 2018) $
  */
  
 OUTPUT_ARCH( "riscv" )

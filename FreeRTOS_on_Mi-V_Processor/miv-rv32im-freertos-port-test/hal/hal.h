@@ -1,10 +1,10 @@
 /***************************************************************************//**
- * (c) Copyright 2007-2017 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2007-2018 Microsemi SoC Products Group. All rights reserved.
  * 
  * Hardware abstraction layer functions.
  * 
- * SVN $Revision: 9085 $
- * SVN $Date: 2017-04-28 14:29:14 +0530 (Fri, 28 Apr 2017) $
+ * SVN $Revision: 9661 $
+ * SVN $Date: 2018-01-15 16:13:33 +0530 (Mon, 15 Jan 2018) $
  */
 #ifndef HAL_H_
 #define HAL_H_
