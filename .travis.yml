@@ -1,0 +1,4 @@
+sudo: required
+language: generic
+script:
+- docker run -v ${TRAVIS_BUILD_DIR}:/projects microsemiproess/softconsole-headless-slim:5.3 bash -c "sch -i=/projects"
